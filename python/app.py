@@ -2,6 +2,14 @@
 from flask import Flask
 app = Flask(__name__)
 
+counter = 0
+
+@app.route('/')
+def index():
+    global counter
+    counter += 1
+    return f"Цифра: {counter}"
+
 @app.route('/')
 def hello_world():
     return 'Hello World! 9.00)('
