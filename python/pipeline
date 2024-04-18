@@ -8,7 +8,7 @@ pipeline {
                 script {
                     sh "docker rm --force container"
                     echo "----------------------- Build Started -----------------------"
-                    sh "docker build -t app -f python/pipeline ."
+                    sh "docker build -t app -f python/Dockerfile ."
                     echo "----------------------------------------------"
                     echo "Build Number: ${env.BUILD_NUMBER}"
                     echo "----------------------- Build Finished -----------------------"
