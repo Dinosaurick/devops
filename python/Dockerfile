@@ -14,4 +14,4 @@ RUN pip install flask
 EXPOSE 80
 
 # Запуск приложения
-CMD ["python", "app.py"]
+CMD ["python", "python/app.py"]
