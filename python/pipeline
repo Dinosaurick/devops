@@ -1,6 +1,8 @@
 #!groovy
 pipeline {
-    agent any
+    agent {
+        label "MyRunner"
+    }
 
     stages {
         stage('Build') {
