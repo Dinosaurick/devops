@@ -42,6 +42,7 @@ pipeline {
                 script {
                     echo "----------------------- Deploy Started -----------------------"
                     sh 'docker run -d -p 8888:80 --name container app'
+                    sh 'docker logs container'
                     echo "----------------------- Deploy Finished -----------------------"
                 }
             }
