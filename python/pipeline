@@ -41,7 +41,7 @@ pipeline {
             steps {
                 script {
                     echo "----------------------- Deploy Started -----------------------"
-                    sh 'docker run -rm -p 8888:80 --name container app'
+                    sh 'docker run -d --rm -p 8888:80 --name container app'
                     echo "----------------------- Deploy Finished -----------------------"
                 }
             }
