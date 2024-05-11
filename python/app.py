@@ -8,7 +8,7 @@ counter = 0
 def index():
     global counter
     counter += 1
-    return f"Цифрa: {counter}"
+    return f"Цифрaf: {counter}"
 
 @app.route('/')
 def hello_world():
